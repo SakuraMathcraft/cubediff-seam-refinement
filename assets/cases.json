@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "scope": "conditioning_images_for_documented_development_cases",
+  "provider": "Poly Haven",
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "credit": "Panorama assets from Poly Haven; acquisition powered by Poly Haven",
+  "face_fov_degrees": 95,
+  "input_size": 512,
+  "cases": [
+    {
+      "id": "dev_001",
+      "conditioning": "warehouse-condition.png",
+      "input_sha256": "e9033bfa4d34963c93c3aed43d88959632b6ab36504d9c2c2a6b9ffbecf8ce33",
+      "prompt": "An empty industrial warehouse with concrete surfaces and fluorescent lights.",
+      "source": "https://polyhaven.com/a/empty_warehouse_01"
+    },
+    {
+      "id": "dev_002",
+      "conditioning": "room-condition.png",
+      "input_sha256": "6d6e22d866ce14a06af4440dc33fb1a5a1d126039a4bd5591f51e4a5534c9629",
+      "prompt": "An indoor room with wooden flooring, windows and a lamp.",
+      "source": "https://polyhaven.com/a/lebombo"
+    },
+    {
+      "id": "dev_003",
+      "conditioning": "city-condition.png",
+      "input_sha256": "08e668e80bf5ce3f7d1880388124c380646904fdd8d957f30d45f719c705c63f",
+      "prompt": "Modern city buildings beside a river with glass, concrete and open sky.",
+      "source": "https://polyhaven.com/a/modern_buildings"
+    },
+    {
+      "id": "dev_004",
+      "conditioning": "park-condition.png",
+      "input_sha256": "31a6ccb6b822b20bd405d27e303671b7c93516d3feda50de473efe841abc2fff",
+      "prompt": "An open grassy park with trees and a clear sky at sunset.",
+      "source": "https://polyhaven.com/a/rooitou_park"
+    }
+  ]
+}

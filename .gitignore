@@ -1,0 +1,38 @@
+# 本地环境与缓存
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+
+# 大型下载、旧示例和临时文件
+downloads/
+auto-research-project-example/
+auto-research-project-example.zip
+*.part
+**/.DS_Store
+**/__MACOSX/
+
+# 模型和原始数据通过明确的资源清单管理
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Local experiment archive (the repository ships a standalone package).
+/docs/
+/workspace/
+/tools/
+/tests/
+/expert_evidence/
+/optimization_evidence/
+/PROJECT_REPORT.md
+/AGENTS.md
+/runs/
+/checkpoints/
+/build/
+/dist/
+*.egg-info/

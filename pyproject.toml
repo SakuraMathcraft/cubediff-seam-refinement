@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cubediff-seam-refinement"
+version = "0.1.0"
+description = "Geometry-guided latent seam refinement for CubeDiff panoramas"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["torch>=2.11,<2.12", "numpy>=1.26,<3", "Pillow>=10,<13"]
+
+[project.optional-dependencies]
+inference = ["diffusers==0.34.0", "transformers==4.55.4", "accelerate==1.10.1", "safetensors>=0.4.3", "py360convert==1.0.4", "torchvision>=0.26,<0.27"]
+
+[tool.setuptools.packages.find]
+include = ["cubediff_seams*"]
+
+[tool.setuptools.package-data]
+cubediff_seams = ["checkpoint_sha256.json"]
+
+[tool.setuptools.data-files]
+"share/cubediff-seam-refinement/licenses" = ["licenses/OpenCubeDiff-MIT.txt"]
